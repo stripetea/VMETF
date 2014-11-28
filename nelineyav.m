@@ -37,8 +37,8 @@ for i=1:1:N
    
    %ÏĞÎÃÎÍÎ×ÍÛÅ 
 
-    Beta(1) = T(2,1);    %
-   Alfa(1) = 0; 
+    Beta(2) = T(2,1);    %
+   Alfa(2) = 0; 
     
 
     %
@@ -48,11 +48,10 @@ for i=1:1:N
        Beta(j+1) = (D(j) + A(j)*Beta(j))/(C(j) - A(j)*Alfa(j));        %
    end
    
-   T(2,M) = 0;
   
-     Beta(1) = T(2,1);    %
-   Alfa(1) = 0;  
-   for j=1:1:M-1
+  
+      
+   for j=1:1:M-2
        T(2,M-j) = Alfa(M-j+1)*T(2,M-j+1) + Beta(M-j+1);
    end
    

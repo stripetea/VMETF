@@ -43,7 +43,7 @@ for i=1:1:N
     end
         
 end
-
+T(1,N)=300;
 
  
         %янгдюмхе гмювемхи он Y
@@ -54,7 +54,7 @@ end
 
 
 
-for i=2:1:M
+for i=1:1:M
     eta = h*(i-1)/(2*sqrt(Hi*tau*N));
     Y1(i)=T_g*(erfc(eta));
 end

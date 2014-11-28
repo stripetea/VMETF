@@ -6,7 +6,7 @@ L=5; %
 M=51;
 h=L/(M-1);
 tau=0.01;
-N=200;
+N=100;
 
 %œ¿–¿Ã≈“–€
 Hi=0.1;
@@ -32,7 +32,7 @@ for i=1:1:N
        
     end
    
-    for j=2:1:M
+    for j=2:1:M-1
          T(1,j) = T(2,j);
     end
 end
@@ -62,7 +62,7 @@ end
     
 
 
-plot(X, Y0, X, Y)
+plot(X, Y, X, Y0)
 
 
 
